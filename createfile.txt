@@ -1,0 +1,7 @@
+- name: create file in slave
+  hosts: 18.221.28.89
+  tasks:
+          - name: create a file
+            command: touch 1.txt
+~
+

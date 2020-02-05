@@ -1,0 +1,9 @@
+- name: copy file
+  hosts: 18.221.28.89
+  tasks:
+          - name: copy file
+            copy:
+                    src: /home/ubuntu/touch
+                    dest: /home/ubuntu
+
+
