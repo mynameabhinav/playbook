@@ -1,0 +1,17 @@
+ - name: ec2 instance
+            ec2:
+                  key_name: mykeypem
+                  aws_secret_key: OYKyamgyFh1imOroGIjcaJOpItI6AxeXlrMmPslJ
+                  aws_access_key: AKIAIBE42U2W5I4JMZAQ
+                  instance_type: t2.micro
+                  image: ami-0fc20dd1da406780b
+                  region: us-east-2
+                  group: default
+                  count: 1
+                  count_tag:
+                          name: demo
+                  vpc_subnet_id: subnet-05890649
+                  instance_tags:
+                          name: demo
+                  wait: yes
+                  assign_public_ip: ye

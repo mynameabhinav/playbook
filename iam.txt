@@ -1,0 +1,8 @@
+ - name: create iam user
+            iam:
+                    iam_type: user
+                    name: abhinav
+                    state: present
+                    password: apple@123
+                    access_key_state: create
+
